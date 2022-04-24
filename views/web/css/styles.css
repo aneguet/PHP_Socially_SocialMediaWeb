@@ -1,0 +1,559 @@
+/* General style, Header, Side menus and Main content (posts) */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #18191a;
+  overflow-x: hidden;
+}
+.c-pointer {
+  cursor: pointer;
+}
+/* ------------ HEADER ------------ */
+/* Top Navbar */
+.navbar {
+  background: #242526;
+  width: 100vw;
+  padding: 0 20px 0 20px;
+  height: 60px;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.4);
+}
+
+.navbar_right {
+  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar_logo {
+  width: 37px;
+  margin-right: 5px;
+}
+#logo-link {
+  cursor: pointer;
+}
+
+/* Header buttons */
+#header-buttons button {
+  color: white;
+  margin-right: 0.8em;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 3px;
+}
+#header-buttons #all-cats {
+  background-color: hsl(281, 53%, 61%);
+  padding-right: 1.1em;
+  padding-left: 1.1em;
+}
+#header-buttons #all-cats:hover {
+  background-color: hsl(281, 53%, 56%);
+  transition: 0.5s;
+}
+#header-buttons #popular-feed {
+  background-color: hsl(162, 96%, 40%);
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+}
+#header-buttons #popular-feed:hover {
+  background-color: hsl(162, 96%, 35%);
+  transition: 0.5s;
+}
+#header-buttons #about-us {
+  background-color: hsl(183, 67%, 44%);
+  padding-right: 1.6em;
+  padding-left: 1.6em;
+}
+#header-buttons #about-us:hover {
+  background-color: hsl(183, 67%, 39%);
+  transition: 0.5s;
+}
+/* #header-buttons ul {
+  background-color: #242526;
+  box-shadow: -7px 9px 20px 8px #00000045;
+}
+#header-buttons ul a {
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+#header-buttons ul a:hover,
+#header-buttons ul a:active,
+#header-buttons ul a:focus {
+  background-color: #b64ffb;
+  color: white;
+  transition: 0.5s;
+}
+#header-buttons button {
+  background-color: #3a3b3c;
+  color: white;
+}
+#header-buttons button:focus {
+  background-color: #b64ffb;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+#header-buttons button:hover,
+.navbar_links #new_post:hover,
+.navbar_links #logout i:hover {
+  background-color: #b64ffb;
+  color: white;
+  transition: 0.5s;
+} */
+
+/* Search bar */
+#search-bar .input-field {
+  width: 56%;
+  /* background: #3a3b3c; */
+  border: none;
+  /* color: #a8abaf; */
+}
+
+#search-bar .input-field:focus {
+  outline: none;
+}
+/* User profile name */
+.navbar_profile {
+  height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar_profile:hover {
+  cursor: pointer;
+  background: #3a3b3c;
+  padding: 0 7px;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  border-radius: 2px;
+}
+
+.navbar_profile img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.navbar_profile span {
+  color: #e7e9ed;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* Top right buttons (new post and logout)*/
+.navbar_links a {
+  font-size: 16px;
+}
+.navbar_links i {
+  margin-right: 5px;
+  background: #404041;
+  padding: 12px;
+  border-radius: 100%;
+  color: #e7e9ed;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.navbar_links i:hover {
+  background: #4e4f50;
+}
+
+/* ------------ LEFT MENU (Categories) and RIGHT MENU (Category info in Show Post) ------------ */
+
+.category_names span {
+  cursor: pointer;
+}
+
+.content_left,
+.content_right {
+  padding-left: 0px;
+  background-color: #262626;
+}
+.content_left,
+.content_right {
+  color: #e7e9ed;
+}
+.content_right {
+  padding: 0px 14px;
+}
+.content_center {
+  width: 50%;
+  text-align: center;
+  height: 100vh;
+}
+
+.content_left ul,
+.content_right ul {
+  margin: 0;
+  list-style: none;
+  padding: 25px 0;
+}
+
+.content_left ul li,
+.content_right ul li {
+  padding: 0 15px;
+  margin-bottom: 17px;
+}
+
+.content_left ul li a,
+.content_right ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #e7e9ed;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.content_left ul li i,
+.content_right ul li i {
+  background: #2b2b2b;
+  padding: 10px;
+  border-radius: 100%;
+  color: #b64ffb;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#left-menu_categories {
+  overflow-y: auto;
+  max-height: 95vh;
+  padding-left: 21px;
+  width: 15.8em;
+}
+
+.content_left ul li a img {
+  width: 37px;
+  margin-right: 10px;
+}
+/* Scrollbar in case the user follows a lot of categories*/
+/* width */
+#left-menu_categories::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+#left-menu_categories::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  box-shadow: inset 0 0 5px rgb(61, 61, 61);
+  /* border-radius: 10px; */
+}
+
+/* Handle - Default scrollbar color*/
+#left-menu_categories::-webkit-scrollbar-thumb {
+  /* background: #b64ffb; */
+  /* border-radius: 10px; */
+  background: #313131;
+}
+
+/* Handle on hover */
+#left-menu_categories::-webkit-scrollbar-thumb:hover {
+  /* background: #b64ffb; */
+  background: #454545;
+}
+
+/* --------------------  CENTRAL CONTENT  (userfeed, category_posts, show_post) ---------------------  */
+
+/* Header breadcrumb */
+.breadcrumb_section {
+  margin-top: 2em;
+  font-weight: 400;
+  margin-left: 3.6em;
+  color: #198754;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.breadcrumb_section .breadcrumb-divider {
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 10px;
+  margin-top: 5px;
+  color: #198754;
+}
+.breadcrumb_section .primary-breadcrumb {
+  text-decoration: underline;
+}
+/* Dropdown filter on Posts */
+#feed_filters_section {
+  margin: 2em 27em;
+}
+#feed_filters_section #feed_filters {
+  background-color: #242526;
+  color: white;
+  border: 1px solid #2a2b2d;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Posts */
+
+img.img-fluid {
+  min-width: 100%;
+}
+.post {
+  background-color: #242526;
+  border-radius: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 27em;
+  margin-left: 16em;
+  max-width: 554px; /* Maximum image width */
+}
+
+.post_title {
+  padding: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.post_title img {
+  width: 40px;
+  margin-right: 7px;
+}
+
+.post_title_content {
+  text-align: left;
+}
+.post_title_content a {
+  cursor: pointer;
+}
+
+.post_title_content p {
+  color: #e4e6eb;
+  font-weight: 500;
+}
+
+.post_title_content span {
+  color: #b7babe;
+  font-size: 12px;
+}
+
+.post_description {
+  min-height: 287px;
+}
+.post_description_xs {
+  min-height: 170px;
+}
+
+.post_description p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.post_subtitle {
+  padding: 0 15px;
+  color: #e4e6eb;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.post_description_title {
+  margin-top: -5px;
+  padding: 10px 15px;
+  background-color: #2a2b2d; /*#3a3b3c;*/
+  text-align: left;
+  position: relative;
+  word-wrap: break-word; /* Prevents text from overflowing div */
+}
+
+/*
+.post_description_title:after {
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff00 0%,
+    #2a2b2d 67%,
+    #2a2b2d 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #ffffff00 0%,
+    #2a2b2d 67%,
+    #2a2b2d 100%
+  );
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+*/
+.post_description_title {
+  color: #e4e6eb;
+}
+.post_description_title code {
+  color: #15ac1a;
+  background-color: #252525;
+}
+.post_description_title span {
+  color: #b7babe;
+  font-size: 13px;
+}
+
+.post_description_title p {
+  font-weight: 400; /* 500 */
+  color: #e4e6eb;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.post-date-area {
+  text-align: right;
+  padding: 10px 15px;
+  color: #989898;
+  font-size: smaller;
+}
+
+/* Post Votes and Comments */
+#comment-form label {
+  color: #989898;
+}
+#comment-submit {
+  padding: 9px;
+  margin-top: -1px;
+  font-size: 15px;
+  width: 100%;
+}
+.votes_comments_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.votes_comments_area .purple_color {
+  color: #b64ffb;
+}
+.votes_comments_area .red_color {
+  color: #f03a17;
+}
+
+.votes_comments_area .icons {
+  display: flex;
+  align-items: center;
+}
+
+.votes_comments_area .icons img {
+  cursor: pointer;
+}
+
+.votes_comments_area .icons .votes_number {
+  margin-left: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Vote icons */
+
+.vote_icon_size {
+  width: 20px;
+}
+.upvote_default {
+  content: url("https://i.imgur.com/5FxIKEq.png");
+}
+.downvote_default {
+  content: url("https://i.imgur.com/YNPnhou.png");
+}
+.upvote_filled {
+  content: url("https://i.imgur.com/wTKcJRU.png");
+}
+.downvote_filled {
+  content: url("https://i.imgur.com/wM8jE7U.png");
+}
+
+.comment_counts {
+  color: #b7babe;
+}
+#feed_filtered-posts .comment_counts:hover {
+  color: #959595;
+}
+.custom-link,
+.custom-link-text {
+  cursor: pointer;
+}
+.custom-link-text:hover {
+  color: #c1c1c1;
+  transition: 0.3s;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #adadad;
+}
+
+a,
+a:link {
+  color: inherit;
+}
+
+/* Scroll to top Button */
+
+#scrollTop {
+  position: absolute;
+  top: 648px;
+  right: 249px;
+}
+#scrollTop i {
+  cursor: pointer;
+  /* margin-right: 2em; */
+  background-color: hsl(0deg 0% 13%);
+  padding: 12px 14px;
+  border-radius: 100%;
+  font-size: 16px;
+  color: hsl(0deg 0% 30%);
+  box-shadow: 2px 2px 5px 0px #0000002b;
+}
+/* --------------------------  Media Queries  ------------------------ */
+
+/* Left and right menu behavior when resizing viewport */
+@media (min-width: 577px) {
+  .content_right div,
+  .content_left ul {
+    position: fixed;
+  }
+}
+@media (max-width: 576px) {
+  .content_right ul,
+  .content_left ul {
+    position: unset;
+  }
+}
+/* Posts behavior when resizing viewport */
+@media (max-width: 1300px) {
+  .post {
+    margin: 2em 0em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 14em;
+    margin-right: 16em;
+  }
+}
+@media (max-width: 1160px) {
+  .post {
+    margin: 2em 0em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 10em;
+    margin-right: 13em;
+  }
+}
+@media (max-width: 948px) {
+  .post {
+    margin: 2em 0em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}

@@ -1,0 +1,236 @@
+/* variables */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  line-height: 1.8;
+}
+
+.container-fluid {
+  background: -webkit-linear-gradient(130deg, #b06ab3, #61a9f3);
+  background: linear-gradient(130deg, #b06ab3, #61a9f3);
+  background-size: cover;
+}
+form {
+  font-size: 14px;
+}
+.form-wrap {
+  background: rgb(53 53 53);
+  padding: 77px 30px 15px 30px;
+  color: #fff;
+  box-shadow: 0px -5px 9px #2b2b2bb8;
+}
+
+#submit {
+  color: #fff;
+  background-color: #9e30e9;
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  margin-top: 24px;
+  letter-spacing: 0px;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 6px 5px 9px #2b2b2bb5;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+#login-form #submit {
+  margin-top: 31px;
+}
+
+#submit:hover {
+  background-color: #912cd4;
+}
+
+a {
+  color: #aa6eb7;
+}
+a:hover,
+a:active,
+a:link,
+a:visited {
+  color: #aa6eb7;
+}
+a:hover {
+  color: #aa6eb7;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.form-wrap .bottom-text {
+  font-size: 10px;
+  margin-top: 7px;
+  font-weight: 200;
+  font-style: italic;
+}
+.form-wrap.extra-margin {
+  padding: 94px 30px 0px 30px;
+}
+
+.logo-position {
+  text-align: center;
+}
+#logo {
+  width: 114px;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+input#username,
+input#email,
+input#password,
+input#password2 {
+  background-color: #232323;
+  color: #fff;
+  border: none;
+}
+input#username:focus,
+input#email:focus,
+input#password:focus,
+input#password2:focus {
+  outline: none;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #743ad5, #15eb88);
+}
+/* Custom checkbox style */
+.custom-checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+.custom-checkbox:active,
+.custom-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.custom-checkbox:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+.custom-checkbox:checked:after {
+  content: "\2714";
+  font-size: 14px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  color: #9e30e9;
+}
+/* END Custom checkbox style*/
+footer {
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.purple-color {
+  color: #aa6eb7;
+}
+.terms-margin {
+  margin-top: 17px;
+  margin-bottom: 3px;
+}
+.terms-margin label {
+  margin-left: 9px;
+}
+
+.terms-margin {
+  display: flex;
+  align-items: center;
+}
+.terms-margin input,
+.terms-margin label {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+#password-parent,
+#password2-parent {
+  position: relative;
+}
+#password-show,
+#password2-show {
+  position: absolute;
+  z-index: 1;
+  top: 43px;
+  right: 15px;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+/* MEDIA QUERIES */
+/* Login page when resizing height to 592px or less*/
+@media (max-height: 592px) {
+  #login body,
+  #login .container-fluid,
+  #login .row,
+  #login .col {
+    height: auto; /* It solves an overflow problem of form elements and background */
+  }
+  footer p {
+    margin-bottom: 4em; /* Space at the bottom of the forms */
+  }
+}
+/* Signup page when resizing height to 662px or less*/
+
+@media (max-height: 662px) {
+  #signup body,
+  #signup .container-fluid,
+  #signup .row,
+  #signup .col {
+    height: auto; /* It solves an overflow problem of form elements and background */
+  }
+  footer p {
+    margin-bottom: 4em; /* Space at the bottom of the forms */
+  }
+}

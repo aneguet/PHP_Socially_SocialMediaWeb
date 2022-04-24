@@ -1,0 +1,86 @@
+/*Contact form*/
+
+.container-form {
+  margin: auto;
+  max-width: 650px;
+  overflow: auto;
+  padding: 52px 66px;
+  background-color: #35333361;
+  color: #242526;
+}
+#post-form {
+  background: -webkit-linear-gradient(130deg, #b06ab3, #61a9f3);
+  background: linear-gradient(130deg, #b06ab3, #61a9f3);
+}
+#post-form section .form-group {
+  margin-bottom: 20px;
+}
+
+#post-form section label {
+  display: block; /*empuja a la siguiente linea */
+  margin-bottom: 5px;
+}
+
+#post-form section input,
+#post-form section textarea,
+#post-form section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#post-form section input[type="file"] {
+  width: 60%;
+}
+
+#post-form section #remove-img-btn {
+  color: #fff;
+  padding: 7px 11px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 0px;
+  margin-left: auto;
+  font-weight: 400;
+}
+
+#post-form section #remove-img-btn:hover {
+  background-color: white;
+  color: #2b2b2b;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+
+#post-form section textarea {
+  height: 150px;
+}
+
+#post-form section input:focus,
+#post-form section textarea:focus {
+  outline: none;
+  border-color: #a6a6a6;
+}
+
+#post-form #new_post-submit-btn {
+  color: #fff;
+  background-color: #202020;
+  padding: 13px;
+  margin: 24px 0px;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 3px 3px 9px #2b2b2b4a;
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+}
+
+#post-form #new_post-submit-btn:hover {
+  background-color: hsl(0deg 0% 11%);
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}

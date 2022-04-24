@@ -1,0 +1,213 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+
+.sidebar-sticky {
+  min-width: 250px;
+  max-width: 220px;
+  min-height: calc(100vh - 40px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sidenav-menu-heading {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--bs-gray-700);
+}
+.sidebar-sticky a,
+.sidebar-sticky a:hover,
+.sidebar-sticky a:focus,
+.sidebar-sticky a:active {
+  text-decoration: none;
+  color: var(--bs-gray-600);
+}
+.sidebar-sticky a:hover {
+  color: #ccc;
+}
+.sidebar-sticky div {
+  padding: 10px 0 10px 5px;
+  font-weight: 500;
+}
+.sidebar-sticky div #adminSidenav_bar {
+  margin-left: 1em;
+}
+.sidebar-sticky a {
+  padding: 10px 0 10px 5px;
+  color: #b4b4b4;
+}
+.sidebar-sticky .icons_margin {
+  margin-right: 9px;
+}
+
+.sidebar_link {
+  padding-left: 2px;
+}
+/* Navbar Header */
+#admin-navbar {
+  background: #242526;
+  width: 100vw;
+  height: 56px;
+  padding: 0 16px 0 31px;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px -2px rgb(255 255 255 / 40%);
+}
+#admin-navbar #home_icon {
+  color: #f0f0f0;
+}
+#admin-navbar .navbar_logo {
+  width: 37px;
+  margin-right: 5px;
+}
+#admin-navbar .admin_navbar_links a {
+  font-size: 16px;
+}
+#admin-navbar .admin_navbar_links #logout {
+  margin-right: 5px;
+  background: #404041;
+  padding: 8px 12px 8px 12px;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+#admin-navbar .admin_navbar_links #logout:hover {
+  background: #4e4f50;
+}
+
+.admin_navbar_profile .profile_name {
+  margin-right: 9px;
+}
+.admin_navbar_profile .profile_name img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.admin_navbar_profile {
+  color: var(--bs-white);
+}
+.admin_navbar_profile span {
+  padding: 0 2px;
+}
+/* Admin content */
+#admin-content {
+  padding: 4em;
+}
+.secondary-header-margin {
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+/* Font weight */
+.weight-bold {
+  font-weight: bold;
+}
+/* Font sizes */
+.text-xs {
+  font-size: 0.7rem;
+}
+.text-md {
+  font-size: 0.9rem;
+}
+.text-lg {
+  font-size: 1.2rem;
+}
+
+/* Tables  */
+
+#display_table th,
+td {
+  text-align: center;
+}
+
+#display_table a {
+  padding: 0 2px;
+}
+.dataTables_length {
+  margin-bottom: 1.6em;
+}
+#editUserBtn,
+#deleteUserBtn {
+  margin-right: 8px;
+}
+/*Edit user profile page */
+.role-badge {
+  border-radius: 14px;
+  background-color: #00ff55;
+  padding: 2px 16px;
+  margin: 0px 5px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.secondary-text {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.user-rank {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  margin: 2px 5px 2px 2px;
+  object-fit: cover;
+}
+
+#user-info-section p,
+#user-comments-section p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+#user-info-section b,
+#user-comments-section b {
+  font-weight: 600;
+}

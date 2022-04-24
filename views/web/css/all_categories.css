@@ -1,0 +1,156 @@
+.all-categories {
+  column-gap: 50px;
+  row-gap: 50px;
+  padding: 50px 50px;
+}
+
+.all-categories .card {
+  background-size: cover;
+  background-position-y: center;
+  flex: 1 0 23%;
+  justify-content: center;
+  height: 100px;
+  cursor: pointer;
+  border: none;
+}
+/* Cards front gradient */
+.all-categories .card:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 100%;
+  display: inline-block;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0.4)),
+    color-stop(100%, rgba(0, 0, 0, 0))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  height: 100%;
+  border-radius: 0.25rem;
+  margin-top: -1px;
+}
+
+/* Cards images */
+.all-categories #Animals {
+  background-image: url("https://i.imgur.com/RKsZM3G.jpg");
+  background-position-y: 274px;
+}
+.all-categories #Animals:hover:after,
+.all-categories #Art:hover:after,
+.all-categories #Books:hover:after,
+.all-categories #Films:hover:after,
+.all-categories #Finance:hover:after,
+.all-categories #Fitness:hover:after,
+.all-categories #Food:hover:after,
+.all-categories #Gaming:hover:after,
+.all-categories #Health:hover:after,
+.all-categories #Humor:hover:after,
+.all-categories #Music:hover:after,
+.all-categories #News:hover:after,
+.all-categories #Photography:hover:after,
+.all-categories #Science:hover:after,
+.all-categories #Sports:hover:after,
+.all-categories #Shows:hover:after,
+.all-categories #Tech:hover:after,
+.all-categories #Videos:hover:after {
+  background-color: #b99be1;
+  transition: 0.05s;
+}
+.all-categories #Art {
+  background-image: url("https://i.imgur.com/KSDiBmC.jpg");
+}
+.all-categories #Books {
+  background-image: url("https://i.imgur.com/4yleEi0.jpg");
+}
+.all-categories #Films {
+  background-image: url("https://i.imgur.com/tSnaWwL.jpg");
+}
+.all-categories #Finance {
+  background-image: url("https://i.imgur.com/UkF6fgx.jpg");
+}
+.all-categories #Fitness {
+  background-image: url("https://i.imgur.com/SyJ4iqN.jpg");
+  background-position-y: 151px;
+}
+.all-categories #Food {
+  background-image: url("https://i.imgur.com/qVZ8N0b.jpg");
+}
+.all-categories #Gaming {
+  background-image: url("https://i.imgur.com/qy8HywK.jpg");
+  background-position-y: 185px;
+}
+.all-categories #Health {
+  background-image: url("https://i.imgur.com/AMeccP7.jpg");
+}
+.all-categories #Humor {
+  background-image: url("https://i.imgur.com/jX04HFo.jpg");
+  background-position-y: 183px;
+}
+.all-categories #Music {
+  background-image: url("https://i.imgur.com/mSBBdhW.jpg");
+}
+.all-categories #News {
+  background-image: url("https://i.imgur.com/UKm96E5.jpg");
+  background-position-y: 198px;
+}
+.all-categories #Photography {
+  background-image: url("https://i.imgur.com/c0dbxNG.jpg");
+  background-position-y: 228px;
+}
+.all-categories #Science {
+  background-image: url("https://i.imgur.com/OluadfQ.jpg");
+  background-position-y: 178px;
+}
+.all-categories #Sports {
+  background-image: url("https://i.imgur.com/gXUiU4m.jpg");
+  background-position-y: 209px;
+}
+.all-categories #Shows {
+  background-image: url("https://i.imgur.com/go67xLW.jpg");
+  background-position-y: 178px;
+}
+.all-categories #Tech {
+  background-image: url("https://i.imgur.com/ujH9h2o.jpg");
+  background-position-y: 346px;
+}
+.all-categories #Videos {
+  background-image: url("https://i.imgur.com/k4BlqD8.jpg");
+}
+
+/* Cards text (category name) */
+.all-categories .card .card-text {
+  font-size: 31px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  z-index: 1;
+}

@@ -1,0 +1,86 @@
+/* Shared style: generic styles, messages to the user, required fields, etc.  */
+
+/* Required fields */
+
+.required_field {
+  color: red;
+  font-size: small;
+  margin-left: 6px;
+}
+.required_field_dark {
+  color: #a82222;
+  font-size: small;
+  margin-left: 6px;
+}
+
+/* Messages */
+
+.msg {
+  font-style: italic;
+}
+.error-message {
+  color: red;
+}
+.error-message-dark {
+  color: #a82222;
+}
+.info-message {
+  color: #fff;
+}
+.success-message {
+  color: rgb(26, 172, 70);
+}
+.danger-message {
+  color: rgb(255, 197, 6);
+}
+.no-posts-message {
+  color: grey;
+  border: 2px solid #1a1a1a;
+  background-color: #80808021;
+  border-radius: 6px;
+  text-align: center;
+  margin: 3em;
+  padding: 9em 0em;
+}
+
+/* Padding */
+
+.py-4 {
+  padding: 2rem 0;
+}
+.py-5 {
+  padding: 2.5rem 0;
+}
+.py-6 {
+  padding: 3rem 0;
+}
+.p-4 {
+  padding: 2rem;
+}
+.p-5 {
+  padding: 2.5rem;
+}
+.p-6 {
+  padding: 3rem;
+}
+
+/* Margin */
+
+.my-4 {
+  margin: 2rem 0;
+}
+.my-5 {
+  margin: 2.5rem 0;
+}
+.my-6 {
+  margin: 3rem 0;
+}
+.m-4 {
+  margin: 2rem 0;
+}
+.m-5 {
+  margin: 2.5rem 0;
+}
+.m-6 {
+  margin: 3rem 0;
+}

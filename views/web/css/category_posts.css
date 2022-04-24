@@ -1,0 +1,75 @@
+#category-header {
+  color: white;
+  font-size: 30px;
+  background-color: #151515;
+  padding: 1em;
+  margin: 0;
+}
+
+#category-header #category-title {
+  margin-right: 6em;
+}
+
+#category-posts_filters_section {
+  margin: 2em 28.4em;
+}
+#category-posts_filters_section #category-posts_filters {
+  background-color: #242526;
+  color: white;
+  border: 1px solid #2a2b2d;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* All the category info */
+#category-header #category-info {
+  margin-right: 7em;
+}
+/* Description */
+#category-header #category-info #category-description {
+  font-size: 15px;
+}
+/* Join-Leave button */
+
+#category-header button {
+  color: #ffffff;
+  padding: 11px 10px;
+  margin-bottom: 0.3em;
+  font-size: 13px;
+  margin-left: 1em;
+}
+
+#category-header .btn-leave {
+  color: #ffffff;
+  background-color: #198754;
+}
+#category-header .btn-leave:hover {
+  color: #198754;
+  border: 1px solid #198754;
+  background-color: unset;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+#category-header .btn-join {
+  color: #198754;
+  border: 1px solid #198754;
+  background-color: unset;
+}
+#category-header .btn-join:hover {
+  color: #ffffff;
+  background-color: #198754;
+  border: none;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+/* Followers */
+#category-header #category-members {
+  font-size: 13px;
+  color: #198754;
+  margin-left: 0.6em;
+  margin-bottom: 0.5em;
+}

@@ -1,0 +1,81 @@
+hr {
+  border-bottom: 2px solid #414141 !important;
+  background-color: unset;
+}
+.profile-section-title {
+  color: white;
+  margin: 2em 3em 1em 3em;
+}
+.profile-section-title h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.profile-section-subtitle h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+.profile-section-subtitle hr {
+  margin-top: 0.3em;
+}
+.sections-style {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+#profile-settings-section {
+  background: rgb(88 88 88 / 30%);
+  border-radius: 5px;
+  color: white;
+}
+.profile-wrapper img {
+  max-width: 120px;
+}
+.profile-avatar img {
+  max-width: 120px;
+  max-height: 120px;
+}
+#username-info {
+  margin-left: 2em;
+}
+#username-title {
+  margin-bottom: 0;
+}
+#username-description {
+  font-weight: 100;
+}
+.custom-file input {
+  width: 220px;
+}
+#upload-avatar-button,
+.save-profile-button {
+  background-color: #198754;
+  color: white;
+}
+#upload-avatar-button:hover,
+.save-profile-button:hover {
+  color: #198754;
+  border: 1px solid #198754;
+  background-color: unset;
+  transition: 0.05s;
+}
+.file-info-txt {
+  font-weight: 100;
+  font-size: 13px;
+  color: #787878;
+  margin-bottom: 0.3em;
+}
+#profile-settings-section .mr {
+  margin-right: 1em;
+}
+#user-remove-img-btn {
+  border: 1px solid white;
+  color: white;
+}
+#user-remove-img-btn:hover {
+  color: black;
+  background-color: white;
+}
+#profile-settings-section .success-message {
+  font-weight: 100;
+  /* color: #198754; */
+}
