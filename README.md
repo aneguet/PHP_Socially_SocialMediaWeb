@@ -10,6 +10,6 @@ The app can be tested [here](https://socially.one)
 
 The original github project is linked [here](https://github.com/andommar/dwpSocialWeb)
 
-![Socially_SocialMediaWeb_PHP stats](https://github-readme-stats.vercel.app/api?username=aneguet)
+![Socially_SocialMediaWeb_PHP stats](https://github-readme-stats.vercel.app/api?username=aneguet&show_icons=true)
 
 
