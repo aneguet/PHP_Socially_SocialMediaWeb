@@ -7,7 +7,7 @@ The app can be tested [here](https://socially.one)
 - [Andres Dominguez](https://github.com/andommar)
 - Anna Lopez 
 
-The original github project is linked [here](https://github.com/andommar/dwpSocialWeb)
+The original github project is linked [here](https://github.com/andommar/verycode)
 
 
 
